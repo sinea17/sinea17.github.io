@@ -209,11 +209,11 @@ body {
   border-top-right-radius: 100px 30px;
 }
 
-[popover]{
+[data-popover]{
   position: relative;
 }
-[popover]::after {
-  content: attr(popover);
+[data-popover]::after {
+  content: attr(data-popover);
   margin-top: 8px;
   top: 100%;
   transform: translateX(-50%) translateY(0%);
@@ -235,12 +235,12 @@ body {
   position: absolute;
   text-align: center;
 }
-[popover]::before {
+[data-popover]::before {
   margin-top: 8px;
   top: 100%;
   transform: translateX(-50%) translatey(-100%) rotate(-180deg);
 }
-[popover]:hover::after{
+[data-popover]:hover::after{
   opacity: 1;
   transition: opacity 0.2s ease-out;
 }
